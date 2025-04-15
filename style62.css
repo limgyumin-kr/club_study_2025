@@ -1,0 +1,27 @@
+.color-main {
+    color: rgb(82, 82, 135);
+}
+
+.color-sub1 {
+    color: rgb(30, 137, 208);
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+.font-35 {
+    font-size: 35px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
