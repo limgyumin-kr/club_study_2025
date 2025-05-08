@@ -1,0 +1,29 @@
+<!DOCTYPE html>      <!--HTML 선언-->
+<html lang="ko">      <!--HTML 문서는 한국어임-->
+<head>                
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />     <!--모바일,태블릿,모니터,노트북등 각각 다른 환경에서도 깨지지 않게 크기를 조절해서 보여주는 코드드-->
+  <title>To-Do 리스트</title>     <!--브라우저 탭 네임-->
+  <link rel="stylesheet" href="todostyle.css" />    <!--CSS파일과 연결-->
+</head>
+<body>
+  <h1>📅 나의 To-Do 리스트</h1>    <!--제목-->
+  <div class="calendar" id="calendar"></div>
+
+  <!-- 할 일 입력창 -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2 id="modal-date"></h2>
+      <textarea id="task-input" placeholder="할 일을 입력하세요"></textarea>  <!--할 일을 입력하는 칸, 여러줄 입력 가능능-->
+      <div class="buttons">   <!--버튼 3개를 모아놓는 부분분-->
+        <button onclick="saveTask()">저장</button>   <!--저장을 누르면 savetask JS실행행-->
+        <button onclick="deleteTask()">삭제</button>   <!--저장을 누르면 deletetask JS실행행-->
+        <button onclick="closeModal()">닫기</button>   <!--저장을 누르면 closemodal JS실행행-->
+      </div>
+    </div>
+  </div>
+
+  <script src="todolang.js"></script>
+</body>
+</html>
+
